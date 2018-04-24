@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* CONTAINER */
+.container {
+    font-family: 'Montserrat', helvetica, sans-serif;
+	padding: 0;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: olive;
+}
+.navbar-brand {
+	margin-left: 50px;
+
+    
+}
+
+.navbar-default .navbar-nav > li {
+	font-family: Montserrat', helvetica, sans-serif;
+       
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: olive;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: black;
+        margin-right: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:focus{
+	color: olive;
+}
+
+/* Text styles */
+h1{
+	font-size: 7vh;
+}
+
+h2 {
+	font-family: Montserrat', helvetica, sans-serif;
+	color: #999999;
+	margin-top: 50px;
+}
+
+h4 {
+	font-family: Montserrat', helvetica, sans-serif;
+	color: #999999;
+}
+
+h5 {
+	font-family: Montserrat', helvetica, sans-serif;
+	color: white;
+	padding: 10px;
+}
+
+hr{
+	margin: 0 auto;
+	height: 2px;
+	border: none;
+	color:black;
+	background-color: rgb(108,120,50);
+}
+	
+
+/* SECTION 1*/
+#banner {
+	height: 85vh;
+	background-image: url(../Images/Identity_Crisis_Poster.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	box-shadow: 1px 5px 15px -5px black;
+}
+	
+#logo {
+	padding-top: 30vh;
+}
+
+#name {
+	padding: 10px;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	color: white;
+	text-shadow: 0px 5px 20px black;
+}
+
+#description {
+	padding-top: 10px;
+}
+
+
+/* WORKS */
+
+/* TEMPLATE FROM Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com) */
+
+#section2 {
+    padding-top:32px;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(108,120,50,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    font-family: 'Montserrat', helvetica, sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Montserrat','Helvetica',sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 22px;
+        padding-top: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 20px;
+    }
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.text-primary {
+    color: #ffffff;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+/* ABOUT */
+#section3 {
+	
+    padding-top: 50px;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    background: rgba(232,235,198,.9);
+    font-family: 'Montserrat', helvetica, sans-serif;
+}
+
+#section3 p {
+    margin-top: -90px;
+    margin-bottom: 50px;
+}
+
+/* CONTACT */
+#section4{
+	padding-top: 70px;
+    
+    margin-left: auto;
+    color: aliceblue;
+
+}
+
+#contact-text {
+	font-family: 'Montserrat', helvetica, sans-serif;
+	padding: 50px;
+    font-weight: 100;
+}
+
+
+
+
+/* FOOTER */
+#footer {
+	padding-top: 15px;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	color: #999999;
+    background: rgb(108,120,50);
+}
+
+/* PARALLAX */
+/*#background1 {
+	height: 40vh;
+	background-image: url(../Images/Pokemon_Redesign.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+    
+}
+*/
+
+#background2 {
+	height: 400px;
+	background-image: url(../Images/wall-1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+    z-index: -1;
+}
+
+
+/* MOBILE */
+@media (max-width: 500px) {
+
+	#logo {
+		padding-top: 200px;
+        
+	}
+    #section4 {
+        color: black;
+    }
+	
+	#textbox {
+		margin-top: 10px;
+		padding-right: 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	#copy {
+		text-align: center;
+	}
+}
+
+@media (max-height:800px) {
+	
+	#banner {
+		height: 650px;
+	}
+    
+}
+
+@media (max-width: 1000px) {
+	
+	#gallery2 {
+		padding-top: 0px;
+	}
+}
